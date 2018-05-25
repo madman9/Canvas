@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas画布</title>
+    <script src="js/index.js"></script>
+    <style>
+      /*只有一句，用来初始化画板颜色*/
+      #penal {
+        width: 800px;
+        height: 800px;
+        background-color: #ccc;
+    }
+    </style>
+</head>
+<body>
+    <!-- <canvas id="canvas" width="600" height="900">抱歉，您的浏览器不支持canvas元素</canvas>  -->
+    <!--可选操作-->
+    <div id="select">
+        <button id="pen">铅笔</button>
+        <button id="line">直线</button>
+        <button id="rect">矩形</button>
+        <button id="arc">圆形</button>
+        <button id="robber">橡皮檫</button>
+        <button id="img">图片</button>
+        <button id="save">保存</button>
+        <input type="file" id="file" name="img" style="display: none"/>
+        <input type="color" id="color"/>
+        <input type="number" id="lineWidth"/>
+    </div>
+
+    <!--画板-->
+    <canvas id="penal" width="800" height="800"></canvas> 
+    <script>
+    // var canvas = document.getElementById("canvas");
+    // if(canvas.getContext){
+    //     var content = canvas.getContext('2d');
+    // }
+
+window.onload = function (){
+            var draw = new Draw();
+            draw.init();
+        };
+    </script>
+</body>
+</html>

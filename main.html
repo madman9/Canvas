@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Canvas画布</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <style>
+        /*只有一句，用来初始化画板颜色*/
+        
+        #canvas {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div-tools" class="div-tools">
+        <button onclick="draw('pencil')" id="pencil">画笔</button>
+        <button onclick="draw('rectangle')" id="rectangle">矩形</button>
+        <button onclick="draw('rotundity')" id="rotundity">圆形</button>
+        <button onclick="draw('backout')" id="backout">撤销</button>
+        <button onclick="draw('eraser')" id="eraser">橡皮擦</button>
+        <button onclick="draw('clear')" id="clear">清空画布</button>
+        <button onclick="draw('save')" id="save">保存</button>
+        <button onclick="draw('add')" id="add">+</button>
+        <button onclick="draw('minus')" id="minus">-</button>
+        <input onclick="draw('color')" type="color" id="color">
+        <div class="eraser"></div>
+    </div>
+    <canvas id="canvas" height="900px" width="900px">您的浏览器不支持canvas哦！</canvas>
+</body>
+
+</html>

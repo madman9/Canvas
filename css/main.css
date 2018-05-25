@@ -1,0 +1,16 @@
+.div-tools {
+    margin-bottom: 12px;
+}
+
+.div-tools button {
+    border: 1px solid rgb(169, 169, 169);
+    padding: 3px 8px;
+    background-color: #eaeaea;
+}
+
+.div-tools button:hover {
+    background: #444;
+    border: 1px solid buttonface;
+    padding: 3px 8px;
+    color: #fff;
+}
