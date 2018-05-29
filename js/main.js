@@ -1,4 +1,4 @@
- /*读取画布环境对象 => getContext('2d')获取123*/
+ /*读取画布环境对象 => getContext('2d')获取*/
  var canvas;
  var ctx;
  var canvasW = 900; //画布的宽
